@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Control del Personal</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="JS/funciones.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Control del Personal</h1>
+		<h4>Total en salarios:<span id="totalSalarios"></span></h4>
+		<h4>Promedio salarial:<span id="promedioSalarios"></span></h4>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Correo</th>
+					<th>Telefono</th>
+					<th>Salario</th>
+					<th colspan="2">Agregar / Actualizar / Eliminar</th>
+				</tr>
+				<tr>
+					<td><input class="form-control" id="nombre"></td>
+					<td><input class="form-control" id="correo"></td>
+					<td><input class="form-control" id="telefono"></td>
+					<td><input type="number" class="form-control" id="salario"></td>
+					<td><button class="btn btn-success" onclick="Agregar()">Agregar</button></td>
+					<td><button class="btn btn-warning" onclick="Actualizar()">Actualizar</button>&nbsp;&nbsp;<button class="btn btn-default" onclick="Limpiar()">Limpiar</button></td>
+				</tr>
+			</thead>
+			<tbody id="lista">
+			<!--<tr>
+					<td>n</td>
+					<td>c</td>
+					<td>t</td>
+					<td>n</td>
+					<td><button class="btn btn-success" onclick="">Editar</button></td>
+					<td><button class="btn btn-warning">Actualizar</button>&nbsp;&nbsp;<button class="btn btn-default" onclick="">Eliminar</button></td>
+           </tr> -->
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
